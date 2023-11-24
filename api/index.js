@@ -11,6 +11,7 @@ const uploadMiddleWare = multer({ dest: "uploads/" });
 const fs = require("fs");
 const Post = require("./models/Post");
 
+
 const salt = bcrypt.genSaltSync(10);
 const secret = "efviqjwk7930rtjhefvijkfjfjdfkjfiwrfjiehnjeoj66";
 
@@ -153,10 +154,10 @@ app.get("/post/:id", async (req, res) => {
   postDoc = await Post.findById(id).populate("author", ["username"]);
   res.json(postDoc);
 });
-if(4000){
+
+
 
   app.listen(4000);
-}
 
 module.exports = app; //for catching vercel
 

@@ -24,7 +24,7 @@ export default function PostPage() {
       <time> {formatISO9075(new Date(postInfo.createdAt))}</time>
       <div className="author">by@{postInfo.author.username}</div>
 
-      {userInfo.id == postInfo.author._id && (
+      {userInfo.id === postInfo.author._id && (
         <div className="edit-rom">
           <Link className="edit-btn" to={`/edit/${postInfo._id}`}>
             <svg

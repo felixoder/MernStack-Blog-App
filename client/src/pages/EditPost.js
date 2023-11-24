@@ -10,7 +10,7 @@ export default function EditPost() {
   const [title, setTitle] = useState("");
   const [summery, setSummery] = useState("");
   const [content, setContent] = useState("");
-  const [author, setAuthor] = useState("");
+ 
   const [files, setFiles] = useState("");
   const [redirect,setRedirect] = useState(false);
   

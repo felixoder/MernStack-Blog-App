@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ReactQuill from "react-quill";
+
 import "react-quill/dist/quill.snow.css";
 import { Navigate } from "react-router-dom";
 import Editor from "../Editor";
@@ -10,7 +10,7 @@ export default function CreatePost() {
   const [title, setTitle] = useState("");
   const [summery, setSummery] = useState("");
   const [content, setContent] = useState("");
-  const [author, setAuthor] = useState("");
+
   const [files, setFiles] = useState("");
   const [redirect,setRedirect] = useState(false)
 
