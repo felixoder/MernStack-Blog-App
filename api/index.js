@@ -153,10 +153,10 @@ app.get("/post/:id", async (req, res) => {
   postDoc = await Post.findById(id).populate("author", ["username"]);
   res.json(postDoc);
 });
+if(4000){
 
-app.listen(4000);
+  app.listen(4000);
+}
 
-//QnKFWWbS51NNtdhs
-//blogapp
+module.exports = app; //for catching vercel
 
-//mongodb+srv://blogapp:QnKFWWbS51NNtdhs@cluster0.uphl20l.mongodb.net/?retryWrites=true&w=majority
